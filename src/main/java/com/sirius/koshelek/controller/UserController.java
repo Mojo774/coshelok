@@ -20,7 +20,7 @@ public class UserController {
     @Operation(summary = "Create user")
     @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public UserResponse getCurrencies(@Valid @RequestBody UserRequest user) {
-        return null;
+        return new UserResponse(22, "dsd", "dsd@fsdf.ru");
     }
 
 }
