@@ -17,6 +17,6 @@ public class UserRequest {
     @Schema(required = true)
     @NotBlank
     @ValidEmail
-    private final String email;
+    private final String login;
 
 }

@@ -20,8 +20,8 @@ import java.util.List;
 public class OperationController {
 
     @Operation(summary = "Get operations")
-    @GetMapping(value = "/{walletId}/wallets", produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<OperationResponse> getOperations(@PathVariable String walletId) {
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<OperationResponse> getOperations(@RequestHeader("walledId") String walledId) {
         return List.of(
                 new OperationResponse(
                         1,

@@ -17,8 +17,8 @@ import java.util.List;
 public class WalletController {
 
     @Operation(summary = "Get wallets")
-    @GetMapping(value = "/{accountId}/accounts", produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<WalletResponse> getAllWallets(@PathVariable String accountId) {
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<WalletResponse> getWallets(@RequestHeader("login") String login) {
         return List.of(
                 new WalletResponse(1,
                         "wallet1",
