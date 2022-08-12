@@ -26,10 +26,11 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation('org.springdoc:springdoc-openapi-ui:1.6.9')
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.7.2'
+    implementation group: 'org.mapstruct', name: 'mapstruct', version: '1.5.2.Final'
 
-    implementation 'com.heroku.sdk:heroku-deploy:3.0.4'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
 tasks.named('test') {
