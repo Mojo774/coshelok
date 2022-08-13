@@ -6,12 +6,18 @@ plugins {
 
 group = 'com.sirius'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '17'
+sourceCompatibility = 17
+targetCompatibility = 17
 
 configurations {
     compileOnly {
         extendsFrom annotationProcessor
     }
+}
+
+jar {
+    baseName = 'app'
+    version = '0.0.1'
 }
 
 repositories {
