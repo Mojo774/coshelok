@@ -21,6 +21,5 @@ public class CategoryResponse {
     private final int icon;
 
     @Schema(required = true)
-    private final int colour;
-
+    private final int color;
 }

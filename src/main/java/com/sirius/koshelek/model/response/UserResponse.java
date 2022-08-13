@@ -20,5 +20,5 @@ public class UserResponse {
     @Schema(required = true)
     @NotBlank
     @ValidEmail
-    private final String email;
+    private final String login;
 }

@@ -18,7 +18,7 @@ public class Wallet {
     private Long userId;
 
     private String name;
-    private Integer currency;
+    private Long currency;
     private Double limit;
     private Double balance;
     private Double income;

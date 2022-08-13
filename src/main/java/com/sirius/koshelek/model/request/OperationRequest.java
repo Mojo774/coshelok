@@ -14,14 +14,14 @@ public class OperationRequest {
     private final OperationType type;
 
     @Schema(required = true)
-    private final Integer category;
+    private final Long category;
 
     @Schema(required = true)
-    private final Integer currency;
+    private final Long currency;
 
     @Schema(required = true)
     @Min(value = 0, message = "Must be greater than zero")
-    private final Double sum;
+    private final Double value;
 
     @Schema(required = true)
     private final String date;

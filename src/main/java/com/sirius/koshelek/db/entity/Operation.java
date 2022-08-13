@@ -21,10 +21,8 @@ public class Operation {
 
     @Enumerated(EnumType.STRING)
     private OperationType type;
-    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
-    @JoinColumn(name = "categoryId")
-    private Category category;
-    private Integer currency;
-    private Double sum;
+    private Long category;
+    private Long currency;
+    private Double value;
     private LocalDateTime date;
 }

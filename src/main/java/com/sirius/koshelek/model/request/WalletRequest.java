@@ -16,7 +16,7 @@ public class WalletRequest {
     private final String name;
 
     @Schema(required = true)
-    private final Integer currency;
+    private final Long currency;
 
     @Schema(required = true)
     @Min(value = 0, message = "Must be greater than zero")
